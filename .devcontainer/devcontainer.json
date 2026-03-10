@@ -15,7 +15,11 @@
     }
   },
   "forwardPorts": [5432],
-  "features":{},
+   "features": {
+    "ghcr.io/devcontainers/features/postgres:1": {
+      "version": "latest"
+    }
+  },
   "onCreateCommand": "echo >> ~/.bashrc && echo PS1='\"$ \"' >> ~/.bashrc",
   "postAttachCommand": "git pull --all"
 }
